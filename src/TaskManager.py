@@ -1,13 +1,16 @@
 class TaskManager:
 
-    def __init__ (self):
-        self.tasks=[]
+    def __init__ (self, tasks_lst):
+        self.tasks = tasks_lst
   
-    def add_task():
-        pass
+    def add_task(self, task):
+        self.tasks.append(task)
+        return self.tasks
 
-    def complete_task():
-        pass
+    def complete_task(self, task):
+        for tarea in self.tasks:
+            if task.id == tarea.id:
+                tarea.status = "Completed"
 
     def remove_task():
         pass
