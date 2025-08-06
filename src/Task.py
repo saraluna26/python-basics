@@ -24,6 +24,8 @@ class Task:
     def description(self, description):
         if not isinstance(description, str) or len(description) < 3:
             raise ValueError ("La descripción debe tener al menos 3 caracteres y una cadena. Enteros no son validos")
+        else:
+            self.__description = description
 
 
     @property
@@ -34,3 +36,5 @@ class Task:
     def status (self, status):
         if not isinstance(status, str) or status not in self.ALLOWED_STATUSES:
             raise ValueError ("Status only can be: TODO, In progress and Completed")
+        else:
+            self._status = status

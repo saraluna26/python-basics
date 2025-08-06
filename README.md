@@ -18,3 +18,7 @@ TaskManager class que permita:
 1. Las tareas deben estar ordenadas por fecha de creación.
 2. Si se intenta completar o eliminar una tarea que no existe, debe lanzar una excepción.
 3. Las tareas deben mostrarse como diccionarios al obtenerlas.
+
+
+# Conexion con RESTful API 
+ - https://dummyjson.com/todos

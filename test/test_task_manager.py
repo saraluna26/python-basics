@@ -1,6 +1,8 @@
+from TaskManager import TaskManager
+
 class TestTaskManager:
     def setup_method(self):
-        pass
+        self.taskmanager = TaskManager
 
     # def test_add_task():
     #     pass
